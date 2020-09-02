@@ -10,7 +10,7 @@
 	const handleSubmit = async(e) => {
 
 		const { description, location } = e.detail;
-		const res = await fetch(`http://localhost:3000/jobs/${description}/${location}`)
+		const res = await fetch(`https://api-job-search.herokuapp.com/jobs/${description}/${location}`)
 		jobs = await res.json();
 	}
 
