@@ -10,7 +10,7 @@
     let job = {};
 
     const getData = async() => {
-    	const res = await fetch(`http://localhost:3000/jobs/${params.id}`);
+    	const res = await fetch(`https://api-job-search.herokuapp.com/jobs/${params.id}`);
     	job = await res.json();
     }
 

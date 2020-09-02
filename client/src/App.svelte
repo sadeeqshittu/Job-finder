@@ -8,7 +8,7 @@
     let params;
      
     onMount(async() => {
-    	const res = await fetch('http://localhost:3000/jobs');
+    	const res = await fetch('https://api-job-search.herokuapp.com/jobs');
     	jobs = await res.json();
     })
 
